@@ -4,7 +4,7 @@
 
 [My Fork of Mini-Padder](https://damians-eng.github.io/mini-padder)
 
-[Play Banjo Kazooie](https://damians-eng.github.io/banjo-kazooie-Unblocked)
+[Play Banjo Kazooie](https://damians-eng.github.io/Banjo-Kazooie-Unblocked)
 
 [Deprecated archive of Wiihacks Wiki](https://damians-eng.github.io/wiihacks-wiki)
 
