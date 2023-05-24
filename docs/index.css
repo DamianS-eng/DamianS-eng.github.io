@@ -55,6 +55,7 @@ h1 {
 h2 {
   font-size: var(--fs-700);
   color: var(--clr-nice);
+	width: 50%;
 }
 h1, h2, h3 {
 	padding: .2em 0;
@@ -70,6 +71,7 @@ ul {
   background: var(--clr-back);
 	*/
 	padding: 0 1em;
+	width: 50%;
 }
 li {
   color: var(--clr-bright);
@@ -99,10 +101,11 @@ aside {
 	position: fixed;
 	top: 7%;
 	right: 10%;
-	z-index: -1;
 }
 .container {
 	display: grid;
+	grid-template-rows: repeat(auto-fit, minmax(2em, 1fr));
+	padding: .1em 0;
 }
 .ignore, #deprecated {
 	display: none;
