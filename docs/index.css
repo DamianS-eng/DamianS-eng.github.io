@@ -66,11 +66,14 @@ p {
 	padding: .1em 0;
 }
 ul {
-  background: #44FF00;
+	/*
+  background: var(--clr-back);
+	*/
 	padding: 0 1em;
 }
 li {
   color: var(--clr-bright);
+	display: block;
   /*
 	background: var(--clr-low);
 	*/
@@ -93,9 +96,10 @@ footer {
 	margin-left: inherit;
 }
 aside {
-	position: sticky;
+	position: fixed;
 	top: 7%;
 	right: 10%;
+	z-index: -1;
 }
 .container {
 	display: grid;
