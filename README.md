@@ -8,6 +8,8 @@
 
 [City Skyline](https://damians-eng.github.io/CityBuildingSkyline)
 
+[Ferris Wheel](https://damians-eng.github.io/CSS_ferriswheel)
+
 ## Find me here!
 
 <a rel="me" href="https://mas.to/@DaMu">Mastodon</a>
