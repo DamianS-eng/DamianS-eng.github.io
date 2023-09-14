@@ -10,6 +10,8 @@
 
 [Ferris Wheel](https://damians-eng.github.io/CSS_ferriswheel)
 
+[Solar Wiki](https://damians-eng.github.io/SolarWiki)
+
 ## Find me here!
 
 <a rel="me" href="https://mas.to/@DaMu">Mastodon</a>
