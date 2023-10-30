@@ -10,7 +10,7 @@
     --fs-900: 1.4rem;
     --clr-neutral: #ab8888;
     --clr-nice: #332233;
-    --clr-bright: #111122; 
+    --clr-bright: #333344; 
     --clr-low: #cc8c00; 
 		--clr-back: #cecece; 
     --size-400: 1rem;
@@ -32,25 +32,26 @@ html:focus-within {
 }
 
 html, body {
-    /*
-  height: 100%;
-  */
+
   font-size:calc(12px + 1.5vw);
 }
 
 body {
+  --clr-back: linear-gradient(30deg, silver, white, #221133);
   margin: 0 1em;
   max-width: 95vw;
   text-rendering: optimizeSpeed;
   font-family: var(--ff-body);
   color: var(--clr-neutral);
-  background-color: var(--clr-back);
+  background: var(--clr-back);
 }
 
 h1 {
   text-align: center;
 	font-size: var(--fs-900);
   color: var(--clr-bright);
+  text-decoration: underline;
+  text-shadow: 2px 2px 10px var(--clr-neutral);
 }
 h2 {
   font-size: var(--fs-700);
@@ -67,9 +68,6 @@ p {
 	padding: .1em 0;
 }
 ul {
-	/*
-  background: var(--clr-back);
-	*/
 	padding: 0 1em;
 	width: 50%;
 }
@@ -79,10 +77,15 @@ li {
   /*
 	background: var(--clr-low);
 	*/
+  padding: .2em 0;
+}
+li:hover {
+  border: 1px var(--clr-nice) ridge;
 }
 img {
 	max-width: 5em;
 	height: auto;
+  background: transparent;
 }
 
 audio {
@@ -112,9 +115,10 @@ aside:hover {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(2em, 1fr));
   position: fixed;
-  top: 7%;
-  right: 10%;
+  top: min(5%, 500px);
+  right: min(10%, 600px);
   gap: 1em;
+  /*! z-index: -1; */
 }
 @media screen and (orientation: portrait) {
  video {
