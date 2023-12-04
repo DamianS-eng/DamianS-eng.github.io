@@ -27,7 +27,7 @@
 [Neal Fun](https://sliceofpi.fun)
 [Quick Maths](https://quickmaths.answerinprogress.com)
 [Wage Guage](https://wageguage.answerinprogress.com)
-[Snoreville(https://snoreville.com)
+[Snoreville](https://snoreville.com)
 [Best Sites](bestueslesswebsites.com)
 [Useless Web](https://theuselessweb.com)
 [Red Button](https://clicktheredbutton.com)
