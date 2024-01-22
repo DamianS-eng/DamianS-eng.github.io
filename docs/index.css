@@ -1,17 +1,3 @@
-:root {
-    --ff-primary: "Times New Roman", sans-serif;
-    --ff-body: var(--ff-primary);
-    --ff-heading: var(--ff-primary);
-    --clr-neutral: #e3e0da;
-    --clr-bright: #9999ff;
-    --clr-nice: #f0a094; 
-    --clr-low: #444140; 
-		--clr-black: #1e1e24; 
-    --icon-size: 48px;
-		--logo-size: 2em;
-		--button-size: 250px;
-}
-
 *,
   *::before,
   *::after {
@@ -20,120 +6,102 @@
 * {
   margin: 0;
   padding: 0;
-  font:inherit;
+  font-size: inherit;
 }
-
 html:focus-within {
    scroll-behavior: smooth;
 }
-
 html, body {
-  font-size:calc(12px + 1.5vw);
+  font-size:calc(12px + 1.5svw);
 }
-
+:root {
+  --button-clr: #919191;
+  --button-select: #7360ff;
+  --line-clr: purple;
+  --fade-time: .3s;
+  --contain-width: 800px;
+}
 body {
-  --clr-back: linear-gradient(30deg, silver, white, #221133);
-  margin: 0 1em;
-  max-width: 95vw;
-  text-rendering: optimizeSpeed;
-  font-family: var(--ff-body);
-  color: var(--clr-neutral);
-  background: var(--clr-back);
-}
-
-h1 {
-	display: none;
-  text-align: center;
-	font-size: var(--fs-900);
-  color: var(--clr-bright);
-  text-decoration: underline;
-  text-shadow: 2px 2px 10px var(--clr-neutral);
-}
-header {
-	/*background: pink;*/
-	display: grid;
-	grid-template-columns: auto auto;
-	justify-content: space-evenly;
-	align-items: center;
-}
-header > * {
-	/*background: yellow;*/
-}
-footer {
-	min-height: 100px;
-	margin-top: 2em;
-	background: red;
-}
-aside {
-	/*background: purple;*/
-}
-li {
-	height: 90%;
-}
-li a {
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-}
-a button {
-	height: 100%;
-	border: none;
-	background: transparent;
-}
-a button:hover {
-	cursor: pointer;
-	background-color: var(--clr-bright);
-}
-button img {
-	width: var(--icon-size);
-	height: auto;
-}
-.active-links {
-	grid-column: 2 / span 30;
-	height: 50%;
-	list-style-type: none;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--button-size)), 1fr));
-	place-items: center;	
-}
-.grid-site-container {
-	display: grid;
-	container: site / inline-size;
-	/*
-	grid-template-areas: 
-	'header header header'
-	'menu main aside';
-  gap: .5em;
-  padding: .75em;
-	*/
+  margin-inline: 2rem;
 }
 #logo {
-	aspect-ratio: 1/1;
-	width: var(--logo-size);
-	grid-column: 1/1;
+  height: 100px;
 }
-#logo > * {
-	width: 100%;
-	padding-top: .5em;
+#logo img {
+  height: 100%;
+  aspect-ratio: 1;
+  margin-left: min(3em, 20%);
+  margin-top: .5em;
 }
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-        scroll-behavior: auto;
-  }
-    *,*::before,*::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-  }
+.container {
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+  padding: 2em;
 }
-
-@container site (width < 600px) {
-	.grid-site-container {
-		display: block;
-	}
+.tab_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgb(229, 229, 229);
 }
-@media (max-width: 600px) {
-	.grid-site-container {
-		display: block;
-	}
+.tab_box .tab_btn {
+  background: none;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: var(--button-clr);
+  border: none;
+  padding: 0.8em;
+  cursor: pointer;
+}
+.tab_btn:hover {
+  background: silver;
+  color: snow;
+}
+.content-box {
+  padding: .8em;
+}
+.content {
+  background-color: rgba(0, 255, 255, 0.08);
+  padding: 0.6em;
+}
+.content-box .content {
+  display: none;
+  animation: moving var(--fade-time) ease;
+}
+.content-box .content h2 {
+  font-size: 1.2rem;
+  margin-bottom: .6rem;
+}
+.content-box .content.active {
+  display: block;
+}
+.tab_box .tab_btn.active {
+  color: var(--clr-select);
+}
+#active-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--line-clr);
+  border-radius: 10px;
+  height: 5px;
+  width: 5%;
+  transition: all var(--fade-time) ease-in-out;
+}
+.content-ico {
+  min-height: 2em;
+  width: 20%;
+}
+.content-ico > img {
+  height: 100%;
+  width: auto;
+}
+p {
+  font-size: .8rem;
+  font-weight: 300;
+}
+@keyframes moving {
+  from{transform: translateX(50px);opacity: 0;}
+  to {transform: translateX(0px); opacity: 1;}
+}
