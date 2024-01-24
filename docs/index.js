@@ -1,8 +1,8 @@
-const debug = true;
+const debug = false;
 const tabs = document.querySelectorAll('.tab_btn');
 const content = document.querySelectorAll('.content');
 const line = document.querySelector('#active-line');
-const navList = document.querySelector("#navList");
+const navList = document.querySelector(".tab_box");
 let activechosen = "";
 if(debug) {console.log(tabs);}
 
@@ -29,13 +29,13 @@ function ToggleNav(e) {
     e.removeAttribute("active");
     e.innerHTML = "<";
     navList.removeAttribute("active");
-    console.log("Removed.");
+    if(debug) {console.log("Removed.");}
     return;
   }
   e.setAttribute("active", true);
   e.innerHTML = ">";
   navList.setAttribute("active", true)
-  console.log("Making Active.");
+  if(debug) {console.log("Making Active.");}
 }
 
 window.addEventListener('resize', function(event) {
