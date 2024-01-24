@@ -1,21 +1,18 @@
 # DamianS-eng.github.io
 
-## Project website
+## Project List
 
-[My Fork of Mini-Padder](https://damians-eng.github.io/mini-padder)
+This is a small list of projects I can show, many of them use basic HTML5, CSS3 and Javascript.
 
-[Video Clip Player](https://damians-eng.github.io/Video-Player-Grid)
-
-[City Skyline](https://damians-eng.github.io/CityBuildingSkyline)
-
-[Ferris Wheel](https://damians-eng.github.io/CSS_ferriswheel)
-
-[Solar Wiki](https://damians-eng.github.io/SolarWiki)
+- [My Fork of Mini-Padder](https://damians-eng.github.io/mini-padder)
+- [Video Clip Player](https://damians-eng.github.io/Video-Player-Grid)
+- [City Skyline](https://damians-eng.github.io/CityBuildingSkyline)
+- [Ferris Wheel](https://damians-eng.github.io/CSS_ferriswheel)
+- [Solar Wiki](https://damians-eng.github.io/SolarWiki)
 
 ## Find me here!
 
 <a rel="me" href="https://mas.to/@DaMu">Mastodon</a>
-
 
 ### These aren't my sites, but some well-known back alleys:
 
