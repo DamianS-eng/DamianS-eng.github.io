@@ -1,7 +1,8 @@
-const debug = true;
+const debug = false;
 const tabs = document.querySelectorAll('.tab_btn');
 const content = document.querySelectorAll('.content');
 const line = document.querySelector('#active-line');
+const navList = document.querySelector(".tab_box");
 let activechosen = "";
 if(debug) {console.log(tabs);}
 
@@ -22,6 +23,19 @@ function chosen(e, indic) {
       pieceOfContent.classList.add('active');
     };
   });
+}
+function ToggleNav(e) {
+  if(e.getAttribute("active")) {
+    e.removeAttribute("active");
+    e.innerHTML = "<";
+    navList.removeAttribute("active");
+    if(debug) {console.log("Removed.");}
+    return;
+  }
+  e.setAttribute("active", true);
+  e.innerHTML = ">";
+  navList.setAttribute("active", true)
+  if(debug) {console.log("Making Active.");}
 }
 
 window.addEventListener('resize', function(event) {

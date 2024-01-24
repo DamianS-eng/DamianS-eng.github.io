@@ -38,8 +38,26 @@ body {
   box-shadow: 0 2px 16px rgba(0,0,0,0.1);
   padding: 2em;
 }
+#nav-active {
+  display: none;
+  position: fixed;
+  right: 1em;
+  width: 3em;
+  height: 3em;
+  background: snow;
+  border: 2px solid black;
+	border-radius: 1em;
+}
+#nav-active:hover {
+	background: silver;
+	color: white;
+	cursor: pointer;
+}
 .tab_box {
   position: relative;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,12 +108,11 @@ body {
   transition: all var(--fade-time) ease-in-out;
 }
 .content-ico {
-  min-height: 2em;
-  width: 20%;
+  max-width: 20%;
 }
 .content-ico > img {
-  height: 100%;
-  width: auto;
+  width: 100%;  
+  height: auto;
 }
 p {
   font-size: .8rem;
@@ -104,4 +121,31 @@ p {
 @keyframes moving {
   from{transform: translateX(50px);opacity: 0;}
   to {transform: translateX(0px); opacity: 1;}
+}
+@media (orientation: portrait) {
+  .tab_box {
+    display: none;
+  }
+  #nav-active {
+    display: block;
+  }
+  .tab_box[active] {
+    display: grid;
+		position: fixed;
+		right: 3em;
+		width: fit-content;
+		background: rgba(195, 195, 195, .2);
+		transition: display 1s;
+		/*
+		position: default;
+		margin-right: 2em;
+		margin-left: auto;
+		*/
+  }
+	.content-box {
+		max-width: 90%;
+	}
+  ol > li {
+    padding: .5em 0;
+  }
 }
