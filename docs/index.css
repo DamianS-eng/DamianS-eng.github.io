@@ -38,6 +38,9 @@ body {
   box-shadow: 0 2px 16px rgba(0,0,0,0.1);
   padding: 2em;
 }
+#nav-active {
+  display: none;
+}
 .tab_box {
   position: relative;
   display: flex;
@@ -104,4 +107,18 @@ p {
 @keyframes moving {
   from{transform: translateX(50px);opacity: 0;}
   to {transform: translateX(0px); opacity: 1;}
+}
+@media (orientation: portrait) {
+  .tab_box {
+    display: none;
+  }
+  #nav-active {
+    display: block;
+  }
+  .tab_box[active] {
+    display: block;
+  }
+  ol > li {
+    padding: .5em 0;
+  }
 }
