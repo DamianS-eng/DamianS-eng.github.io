@@ -7,6 +7,8 @@
   margin: 0;
   padding: 0;
   font-size: inherit;
+  color: var(--clr-txt);
+  background-color: var(--clr-bg);
 }
 html:focus-within {
    scroll-behavior: smooth;
@@ -15,6 +17,9 @@ html, body {
   font-size:calc(12px + 1.5svw);
 }
 :root {
+  --clr-bg: snow;
+  --clr-txt: black;
+  --clr-sec: rgba(0,255,255,.8);
   --button-clr: #919191;
   --button-select: #7360ff;
   --line-clr: purple;
@@ -22,46 +27,55 @@ html, body {
   --contain-width: 800px;
 }
 body {
-  margin-inline: 2rem;
+  background: linear-gradient(90deg, white 10%, var(--clr-sec));
 }
 #logo {
   height: 100px;
+  top: 0;
+  position: relative;
 }
 #logo img {
+  display: block;
   height: 100%;
   aspect-ratio: 1;
-  margin-left: min(3em, 20%);
+  margin-inline: auto;
   margin-top: .5em;
 }
+h2 {
+  user-select: none;
+}
 .container {
-  border-radius: 20px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+  border-radius: 1.2rem;
+  box-shadow: 0 .06rem 1rem rgba(0,0,0,0.1);
   padding: 2em;
 }
 #nav-active {
   display: none;
-  position: fixed;
+  position: absolute;
+  top: 1em;
   right: 1em;
   width: 3em;
   height: 3em;
-  background: snow;
+  background: var(--clr-bg);
   border: 2px solid black;
-	border-radius: 1em;
+  border-radius: 1em;
 }
 #nav-active:hover {
-	background: silver;
-	color: white;
-	cursor: pointer;
+  background: silver;
+  color: white;
+  cursor: pointer;
 }
 .tab_box {
   position: relative;
-  max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid rgb(229, 229, 229);
+}
+.tab_box > * {
+  min-width: 0;
 }
 .tab_box .tab_btn {
   background: none;
@@ -74,7 +88,7 @@ body {
 }
 .tab_btn:hover {
   background: silver;
-  color: snow;
+  color: var(--clr-bg);
 }
 .content-box {
   padding: .8em;
@@ -90,6 +104,7 @@ body {
 .content-box .content h2 {
   font-size: 1.2rem;
   margin-bottom: .6rem;
+  background: inherit;
 }
 .content-box .content.active {
   display: block;
