@@ -178,10 +178,15 @@ footer {
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    color: var(--clr-sec);
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 1px 1px .8rem white;
     background-color: black;
   }
+  body {
+    background: rgba(10, 10, 10, .8);
+  }
+  main > * {
+    color: var(--clr-sec);
+  } 
 }
 @keyframes moving {
   from{transform: translateX(50px);opacity: 0;}
