@@ -112,6 +112,12 @@ h2 {
   text-align: center;
   margin-bottom: 2ch;
 }
+h3 {
+  font-size: .9rem;
+}
+p {
+  font-size: .7rem;
+}
 .content-box .content {
   display: none;
   animation: moving var(--fade-time) ease;
