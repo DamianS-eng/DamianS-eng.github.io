@@ -7,6 +7,7 @@
   --clr-line: purple;
   --fade-time: .3s;
   --contain-width: 600px;
+  --color-scheme: light dark;
 }
 *,
   *::before,
@@ -52,11 +53,11 @@ header > * {
 .tab_box[active] {
   --clr-bg: snow;
   display: grid;
-	position: fixed;
-	right: 3em;
-	width: fit-content;
+  position: fixed;
+  right: 3em;
+  width: fit-content;
   opacity: .9;
-	transition: display 1s;
+  transition: display 1s;
 }
 .tab_btn {
   background: transparent;
@@ -140,11 +141,6 @@ a {
 ul {
   list-style: none;
 }
-ul li {
-/*   width: fit-content;
-  text-align: start;
-  margin-left: 6ch; */
-}
 footer {
   --clr-bg: transparent; 
   min-height: 5ch;
@@ -178,6 +174,13 @@ footer {
     border: .1rem solid transparent;
     border-radius: 1rem;
     padding: .25rem;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--clr-sec);
+    text-shadow: 1px 1px 2px white;
+    background-color: black;
   }
 }
 @keyframes moving {
