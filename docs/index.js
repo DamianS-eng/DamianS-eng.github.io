@@ -1,4 +1,4 @@
-const debug = true;
+const debug = false;
 const tabs = document.querySelectorAll('.tab_btn');
 const content = document.querySelectorAll('.content');
 const line = document.querySelector('#active-line');
