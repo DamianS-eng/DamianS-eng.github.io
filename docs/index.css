@@ -6,7 +6,7 @@
   --clr-sel: #7360ff;
   --clr-line: purple;
   --fade-time: .3s;
-  --contain-width: 600px;
+  --main-margin: 32ch;
   --color-scheme: light dark;
 }
 *,
@@ -24,7 +24,7 @@ html:focus-within {
 }
 html, body {
   font-size:calc(12px + 1.5svw);
-  height: calc(100svh - 2rem);
+  /*! height: calc(100svh - 2rem); */
   line-height: 1.6;
 }
 body {
@@ -101,7 +101,7 @@ hr {
 main {
   --clr-bg: transparent;
   margin-top: 5ch;
-  max-width: var(--contain-width);
+  max-width: calc(100% - var(--main-margin));
   margin-inline: auto;
 }
 h1 {
