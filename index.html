@@ -18,9 +18,15 @@
 	<button id="nav-active" onClick="ToggleNav(this)">&#8249;</button>
 	<header class="tab_box">
 	    <button autofocus class="tab_btn" value="Home" id="Home" onclick = "chosen('#Home', this.value)">Home</button>
-	    <button class="tab_btn" value="Projects" id="Projects" onclick = "chosen('#Projects', this.value)">Projects</button>
-	    <button class="tab_btn" value="Aside" id="Aside" onclick = "chosen('#Aside', this.value)">Outside Links</button>
-      	    <button class="tab_btn" value="Contact" id="Contact" onclick = "chosen('#Contact', this.value)">Contact</button>
+	    <button class="tab_btn" 
+		    value="Projects" id="Projects"
+		    onclick = "chosen('#Projects', this.value)">Projects</button>
+	    <button class="tab_btn"
+		    value="Aside" id="Aside" 
+		    onclick = "chosen('#Aside', this.value)">Outside Links</button>
+      	    <button class="tab_btn" 
+		    value="Contact" id="Contact" 
+		    onclick = "chosen('#Contact', this.value)">Contact</button>
 	    <div id="active-line" class="invis"> </div>
 	</header>
 	<hr />
@@ -37,15 +43,33 @@
 			<div class="content" title="Projects">
 				<h2>Projects</h2>
 					<ul id="project-list">
-						<li><button class="tab_btn" value="Videos" id="Videos" onclick = "chosen('#Videos', this.value)">Video Grid</button></li>
-						<li><button class="tab_btn" value="Skyline" id="Skyline" onclick = "chosen('#Skyline', this.value)">City Skyline</button></li>
-						<li><button class="tab_btn" value="Pad" id="Pad" onclick = "chosen('#Pad', this.value)">Mini-Padder</button></li>
-						<li><button class="tab_btn" value="Solar" id="Solar" onclick = "chosen('#Solar', this.value)">Solar-Wiki</button></li>
-						<li><button class="tab_btn" value="Ferris" id="Ferris" onclick = "chosen('#Ferris', this.value)">Ferris Wheel</button></li>
-						<li><button class="tab_btn" value="Cog" id="Cog" onclick = "chosen('#Cog', this.value)">Spinning Cog</button></li>
-						<li><button class="tab_btn" value="Cursor" id="Cursor" onclick = "chosen('#Cursor', this.value)">Cursor Highlight</button></li>
-						<li><button class="tab_btn" value="Pokemon" id="Pokemon" onclick = "chosen('#Pokemon', this.value)">Pkmn Teams</button></li>
-						<li><button class="tab_btn" value="Splatoon" id="Splatoon" onclick = "chosen('#Splatoon', this.value)">Splatoon Motion Controls</button></li>
+						<li><button class="tab_btn" 
+							    value="Videos" id="Videos" 
+							    onclick = "chosen('#Videos', this.value)">Video Grid</button></li>
+						<li><button class="tab_btn" 
+							    value="Skyline" id="Skyline" 
+							    onclick = "chosen('#Skyline', this.value)">City Skyline</button></li>
+						<li><button class="tab_btn" 
+							    value="Pad" id="Pad" 
+							    onclick = "chosen('#Pad', this.value)">Mini-Padder</button></li>
+						<li><button class="tab_btn" 
+							    value="Solar" id="Solar" 
+							    onclick = "chosen('#Solar', this.value)">Solar-Wiki</button></li>
+						<li><button class="tab_btn" 
+							    value="Ferris" id="Ferris" 
+							    onclick = "chosen('#Ferris', this.value)">Ferris Wheel</button></li>
+						<li><button class="tab_btn" 
+							    value="Cog" id="Cog" 
+							    onclick = "chosen('#Cog', this.value)">Spinning Cog</button></li>
+						<li><button class="tab_btn" 
+							    value="Cursor" id="Cursor" 
+							    onclick = "chosen('#Cursor', this.value)">Cursor Highlight</button></li>
+						<li><button class="tab_btn" 
+							    value="Pokemon" id="Pokemon" 
+							    onclick = "chosen('#Pokemon', this.value)">Pkmn Teams</button></li>
+						<li><button class="tab_btn" 
+							    value="Splatoon" id="Splatoon" 
+							    onclick = "chosen('#Splatoon', this.value)">Splatoon Motion Controls</button></li>
 					</ul>
 			</div>
 			<div class="content" title="Videos">
@@ -122,26 +146,27 @@
 			</div>
 			<div class="content" title="Aside">
 				<h2>Outside Links</h2> 
-					<p>Here are several useful links outside of my own projects; I often use them myself.</p>
-					<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2804823261" onclick="alert('Hey! \nThis site is data heavy.')"><p>Steam Deck Control Guide</p></a>
-					<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1888830141" onclick="alert('Hey! \nThis is a data-heavy site.')"><p>Steam Link Control Guide</p></a>
-					<br />
-					<ul id="fun-list">
-						<li><a href="https://neal.fun"><p>Neal</p></a></li>
-						<li><a href="https://toms.toys"><p>Tom's Toys</p></a></li>
-						<li><a href="https://firstpersontetris.com"><p>Tetris</p></a></li>
-						<li><a href="https://because-recollection.com"><p>Recollection</p></a></li>
-						<li><a href="https://poolsuite.net"><p>Pool</p></a></li>
-						<li><a href="https://sliceofpi.fun"><p>Pi</p></a></li>
-						<li><a href="https://quickmaths.answerinprogress.com"><p>Maths</p></a></li>
-						<li><a href="https://wageguage.answerinprogress.com"><p>Wage Guage</p></a></li>
-						<li><a href="https://snoreville.com"><p>Snoreville</p></a></li>
-						<li><a href="bestuselesswebsites.com"><p>Best Useless Sites</p></a></li>
-						<li><a href="https://theuselessweb.com"><p>Uesless Web</p></a></li>
-						<li><a href="h</li>ttps://clicktheredbutton.com"><p>Button</p></a></li>
-					</ul>
+				<p>Here are several useful links outside of my own projects; I often use them myself.</p>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2804823261" 
+					onclick="alert('Hey! \nThis site is data heavy.')"><p>Steam Deck Control Guide</p></a>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1888830141" 
+					onclick="alert('Hey! \nThis is a data-heavy site.')"><p>Steam Link Control Guide</p></a>
+				<br />
+				<ul id="fun-list">
+					<li><a href="https://neal.fun"><p>Neal</p></a></li>
+					<li><a href="https://toms.toys"><p>Tom's Toys</p></a></li>
+					<li><a href="https://firstpersontetris.com"><p>Tetris</p></a></li>
+					<li><a href="https://because-recollection.com"><p>Recollection</p></a></li>
+					<li><a href="https://poolsuite.net"><p>Pool</p></a></li>
+					<li><a href="https://sliceofpi.fun"><p>Pi</p></a></li>
+					<li><a href="https://quickmaths.answerinprogress.com"><p>Maths</p></a></li>
+					<li><a href="https://wageguage.answerinprogress.com"><p>Wage Guage</p></a></li>
+					<li><a href="https://snoreville.com"><p>Snoreville</p></a></li>
+					<li><a href="https://bestuselesswebsites.com"><p>Best Useless Sites</p></a></li>
+					<li><a href="https://theuselessweb.com"><p>Uesless Web</p></a></li>
+					<li><a href="https://clicktheredbutton.com"><p>Button</p></a></li>
+				</ul>
 			</div>	
-			
 			<div class="content" title="Contact">
 				<h2>Contact</h2> 
 				<a rel="me" href="https:mas.to/@DaMu">Reach me on mas.to</a>
