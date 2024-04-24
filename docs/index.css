@@ -94,15 +94,16 @@ header > * {
   cursor: pointer;
 }
 hr {
-  max-width: var(--contain-width);
   margin: 2ch auto;
   color: var(--clr-sec);
 }
 main {
   --clr-bg: transparent;
   margin-top: 5ch;
-  max-width: calc(100% - var(--main-margin));
   margin-inline: auto;
+}
+main, hr {
+  max-width: calc(100% - var(--main-margin));
 }
 h1 {
   width: fit-content;
