@@ -30,6 +30,9 @@ html, body {
 body {
   background: radial-gradient(circle, white 10%, var(--clr-sec));
 }
+img {
+  max-width: 100%;
+}
 body > * {
   color: var(--clr-txt);
   background-color: var(--clr-bg);
@@ -102,9 +105,6 @@ main {
   margin-top: 5ch;
   margin-inline: auto;
 }
-main, hr {
-  max-width: calc(100% - var(--main-margin));
-}
 h1 {
   width: fit-content;
   margin-inline: auto;
@@ -149,7 +149,10 @@ footer {
 @media (orientation: landscape) {
   main {
     margin-top: 0;
-  }
+  } 
+  main, hr {
+  max-width: calc(100% - var(--main-margin));
+}
   h2 {
   }
   .tab_box, hr {
