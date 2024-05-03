@@ -2,6 +2,7 @@ const debug = false;
 const tabs = document.querySelectorAll('.tab_btn');
 const content = document.querySelectorAll('.content');
 const line = document.querySelector('#active-line');
+const navActive = document.querySelector('#nav-active');
 const navList = document.querySelector(".tab_box");
 let activechosen = document.querySelector(".tab_btn[autofocus]");
 if(debug) {console.log(tabs);}
@@ -12,8 +13,8 @@ function updateUnderline(activechosen) {
 	line.style.left = (activechosen.offsetLeft - (parseInt(window.getComputedStyle(activechosen).marginLeft),10) + 2) + "px";
 }
 function chosen(e, indic) {
-  //if(debug) {console.log(e);}
-  //if(debug) {console.log(indic);}
+  if(debug) {console.log(e);}
+  if(debug) {console.log(indic);}
   tabs.forEach(tab=>{tab.classList.remove('active')});
   content.forEach(pieceOfContent=>{pieceOfContent.classList.remove('.active');});
   if(debug) {line.classList.add('invis');}
@@ -30,10 +31,9 @@ function chosen(e, indic) {
   });
 }
 function ToggleNav(e) {
+  if(debug){console.log(e)}
   if(e.getAttribute("active")) {
-    e.removeAttribute("active");
-    e.innerHTML = "&#8249;";
-    navList.removeAttribute("active");
+	closeNav();
     if(debug) {console.log("Removed.");}
     return;
   }
@@ -42,7 +42,23 @@ function ToggleNav(e) {
   navList.setAttribute("active", true)
   if(debug) {console.log("Making Active.");}
 }
+function closeNav() {
+	navActive.innerHTML = "&#8249;";
+	navActive.removeAttribute("active");
+	navList.removeAttribute("active");
+}
 window.addEventListener('resize', function(event) {  
 	updateUnderline(activechosen);
 }, true);
 window.onload = updateUnderline(activechosen);
+window.addEventListener('click', function(event) {
+	if(debug){console.log(event.target);}
+	if(event.target == navActive){
+		if(debug){console.log("Clicked on Nav Menu");}
+		return;
+	}
+	if(!navActive.getAttribute("active")){
+		return;
+	}
+	closeNav();
+}, true);
