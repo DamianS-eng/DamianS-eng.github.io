@@ -5,9 +5,11 @@
   --clr-btn: #c1c1c1;
   --clr-sel: #7360ff;
   --clr-line: purple;
+  --clr-shadow: #00C;
   --fade-time: .3s;
   --main-margin: 32ch;
   --color-scheme: light dark;
+  --time: 3s;
 }
 *,
   *::before,
@@ -139,6 +141,21 @@ a {
   margin-inline: auto;
   box-shadow: 0 .2rem .5rem rgba(100,100,100,.3)
 }
+.scan-contain {
+  display: flex;
+  gap: 2.25rem;
+}
+.scan-txt {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--clr-sec);
+  text-shadow: 0px 0px 4rem var(--clr-shadow);
+}
+.scan-box {
+  --contents-length: 0;
+  background: var(--clr-back);
+  animation: movescan var(--time) forwards ease-in-out 1;  
+}
 ul {
   list-style: none;
 }
@@ -198,4 +215,16 @@ footer {
 @keyframes moving {
   from{transform: translateX(50px);opacity: 0;}
   to {transform: translateX(0px); opacity: 1;}
+}
+@keyframes movescan {
+  from {
+    border-left: 2px solid var(--clr-line);
+    margin-left: calc(-1 * var(--contents-length));
+    width: var(--contents-length);
+  }
+  to {
+    border-left: 2px solid transparent;
+    margin-left: 0px;
+    width: 0;
+  }
 }
