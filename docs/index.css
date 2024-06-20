@@ -143,7 +143,8 @@ a {
 }
 .scan-contain {
   display: flex;
-  gap: 2.25rem;
+  /*! gap: 2.25rem; */
+  justify-content: center;
 }
 .scan-txt {
   font-size: 1.5rem;
@@ -153,7 +154,7 @@ a {
 }
 .scan-box {
   --contents-length: 0;
-  background: var(--clr-back);
+  background: var(--clr-shadow);
   animation: movescan var(--time) forwards ease-in-out 1;  
 }
 ul {
@@ -223,7 +224,7 @@ footer {
     width: var(--contents-length);
   }
   to {
-    border-left: 2px solid transparent;
+    border-left: 0px solid transparent;
     margin-left: 0px;
     width: 0;
   }

@@ -8,13 +8,13 @@ let activechosen = document.querySelector(".tab_btn[autofocus]");
 if(debug) {console.log(tabs);}
 if (!getComputedStyle) { alert('getComputedStyle Not supported'); }
 
-const textcontents = document.querySelector(".scan-txt");
+const textcontents = document.querySelector("#scan-txt");
 const boxcontents = document.querySelector(".scan-box");
 let leng = 0;
 for (let i in textcontents.innerHTML) {
   leng += 1;
 }
-leng *= 1.6;
+leng *= .35;
 //console.log("Total Length of Scan = ", leng);
 boxcontents.style.setProperty('--contents-length', leng + "ic");
 console.log(getComputedStyle(boxcontents)
