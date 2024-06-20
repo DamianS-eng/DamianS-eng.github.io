@@ -7,6 +7,20 @@ const navList = document.querySelector(".tab_box");
 let activechosen = document.querySelector(".tab_btn[autofocus]");
 if(debug) {console.log(tabs);}
 if (!getComputedStyle) { alert('getComputedStyle Not supported'); }
+
+const textcontents = document.querySelector(".scan-txt");
+const boxcontents = document.querySelector(".scan-box");
+let leng = 0;
+for (let i in textcontents.innerHTML) {
+  leng += 1;
+}
+leng *= 1.6;
+//console.log("Total Length of Scan = ", leng);
+boxcontents.style.setProperty('--contents-length', leng + "ic");
+console.log(getComputedStyle(boxcontents)
+            .getPropertyValue('--contents-length')
+           )
+
 function updateUnderline(activechosen) {
 //	line.style.width = (activechosen.offsetWidth - parseInt(window.getComputedStyle(activechosen).marginLeft, 10)) + "px";
 	line.style.width = activechosen.offsetWidth + "px";
