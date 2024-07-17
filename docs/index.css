@@ -225,7 +225,7 @@ footer {
     color: var(--clr-sec);
   }
   .tab_btn {
-    color: black;
+    background: black;
   }
   .contact-row img {
   filter: invert(100%);
