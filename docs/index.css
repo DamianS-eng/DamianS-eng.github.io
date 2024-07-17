@@ -165,11 +165,15 @@ ul {
   display: flex;
   justify-content: center;
 }
+.contact-row a {
+  transition: background var(--fade-time) ease-in-out;
+}
 .contact-row img {
   transition: filter var(--fade-time) ease-in-out;
 }
-.contact-row img:hover, .contact-row img:focus-within {
+.contact-row img:hover, .contact-row a:focus-within {
   filter: invert(100%);
+  background: var(--clr-line);
 }
 footer {
   --clr-bg: transparent; 
