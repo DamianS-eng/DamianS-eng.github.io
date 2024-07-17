@@ -161,6 +161,16 @@ a {
 ul {
   list-style: none;
 }
+.contact-row {
+  display: flex;
+  justify-content: center;
+}
+.contact-row img {
+  transition: filter var(--fade-time) ease-in-out;
+}
+.contact-row img:hover, .contact-row img:focus-within {
+  filter: invert(100%);
+}
 footer {
   --clr-bg: transparent; 
   min-height: 5ch;
