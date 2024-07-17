@@ -67,6 +67,7 @@ header > * {
 .tab_btn {
   background: transparent;
   border: .1rem solid transparent;
+  transition: background var(--fade-time) ease-in-out;
 }
 .tab_btn:not(.active):hover {
   background: var(--clr-sel);
@@ -209,9 +210,6 @@ footer {
   main > * {
     color: var(--clr-sec);
   }
-  .tab_btn {
-    filter: invert(.7);
-  }  
 }
 @keyframes moving {
   from{transform: translateX(50px);opacity: 0;}
