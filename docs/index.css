@@ -161,6 +161,20 @@ a {
 ul {
   list-style: none;
 }
+.contact-row {
+  display: flex;
+  justify-content: center;
+}
+.contact-row a {
+  transition: background var(--fade-time) ease-in-out;
+}
+.contact-row img {
+  transition: filter var(--fade-time) ease-in-out;
+}
+.contact-row img:hover, .contact-row a:focus-within {
+  filter: invert(100%);
+  background: var(--clr-line);
+}
 footer {
   --clr-bg: transparent; 
   min-height: 5ch;
@@ -210,6 +224,16 @@ footer {
   main > * {
     color: var(--clr-sec);
   }
+  .tab_btn {
+    background: black;
+  }
+  .contact-row img {
+  filter: invert(100%);
+  }
+  .contact-row img:hover, .contact-row a:focus-within {
+  filter: invert(10%);
+  background: var(--clr-sel);
+  }  
 }
 @keyframes moving {
   from{transform: translateX(50px);opacity: 0;}
