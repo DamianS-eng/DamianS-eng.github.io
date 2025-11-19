@@ -1,0 +1,145 @@
+{
+  "base url": "https://DamianS-eng.github.io/",
+  "sites": [
+    {
+      "sitename": "/amazon-luna-clone",
+      "favicon": "https://DamianS-eng.github.io/amazon-luna-clone/favicon.ico"
+    },
+    {
+      "sitename": "/Banjo-Kazooie-Unblocked",
+      "favicon": "https://DamianS-eng.github.io/logo.png"
+    },
+    {
+      "sitename": "/Basic-HTML-roadmap",
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+    },
+    {
+      "sitename": "/boilerplate-npm",
+      "favicon": "https://DamianS-eng.github.io/boilerplate-npm/favicon.ico"
+    },
+    {
+      "sitename": "/bongo.cat",
+      "favicon": "https://DamianS-eng.github.io/meta/apple-touch-icon.png"
+    },
+    {
+      "sitename": "/Changelog-Test",
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+    },
+    {
+      "sitename": "/CityBuildingSkyline",
+      "favicon": "https://DamianS-eng.github.io/CityBuildingSkyline/favicon.ico"
+    },
+    {
+      "sitename": "/clonezilla",
+      "favicon": "https://DamianS-eng.github.io/clonezilla_logo_transparent.gif"
+    },
+    {
+      "sitename": "/ControllerOverlay",
+      "favicon": "https://DamianS-eng.github.io/ControllerOverlay/favicon.ico"
+    },
+    {
+      "sitename": "/CSS-Tooltip",
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+    },
+    {
+      "sitename": "/CSS_ferriswheel",
+      "favicon": "https://DamianS-eng.github.io/CSS_ferriswheel/favicon.ico"
+    },
+    {
+      "sitename": "/Custom-Cursor-Webpage",
+      "favicon": "https://DamianS-eng.github.io/Custom-Cursor-Webpage/favicon.ico"
+    },
+    {
+      "sitename": "/DamianS-eng.github.io",
+      "favicon": "https://DamianS-eng.github.io/docs/image.ico"
+    },
+    {
+      "sitename": "/esp32-online-tool",
+      "favicon": "https://DamianS-eng.github.io/favicon.png"
+    },
+    {
+      "sitename": "/GBA-Emulator-Unblocked",
+      "favicon": "https://DamianS-eng.github.io/Binaries/gb.ico"
+    },
+    {
+      "sitename": "/handheldlegend.github.io",
+      "favicon": "https://DamianS-eng.github.io/handheldlegend.github.io/favicon.ico"
+    },
+    {
+      "sitename": "/HelloCodeSchoolProject",
+      "favicon": "https://DamianS-eng.github.io/HelloCodeSchoolProject/favicon.ico"
+    },
+    {
+      "sitename": "/hori-hpc-055-en",
+      "favicon": "https://hori.jp/wp-content/themes/hori/img/favicon.png"
+    },
+    {
+      "sitename": "/landchad",
+      "favicon": "https://DamianS-eng.github.io/landchad/favicon.ico"
+    },
+    {
+      "sitename": "/Mario-Kart-64-HD",
+      "favicon": "https://DamianS-eng.github.io/Mario-Kart-64-HD/favicon.ico"
+    },
+    {
+      "sitename": "/mini-padder",
+      "favicon": "https://DamianS-eng.github.io/favicon.ico"
+    },
+    {
+      "sitename": "/mobile-first-for-the-win",
+      "favicon": "https://DamianS-eng.github.io/mobile-first-for-the-win/favicon.ico"
+    },
+    {
+      "sitename": "/MyPkmnTeams",
+      "favicon": "https://DamianS-eng.github.io/image.ico"
+    },
+    {
+      "sitename": "/neatnik-calendar",
+      "favicon": "https://DamianS-eng.github.io/neatnik-calendar/favicon.ico"
+    },
+    {
+      "sitename": "/personal-portfolio-roadmapsh",
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+    },
+    {
+      "sitename": "/semantic-HTML-CV",
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+    },
+    {
+      "sitename": "/SolarWiki",
+      "favicon": "https://DamianS-eng.github.io/docs/image.ico"
+    },
+    {
+      "sitename": "/Splatoon-Motion-Controls-Explained",
+      "favicon": "https://DamianS-eng.github.io/docs/favicon.ico"
+    },
+    {
+      "sitename": "/Testimonials",
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+    },
+    {
+      "sitename": "/tux-racer-js",
+      "favicon": "https://img.itch.zone/aW1nLzIwMTk4NDA0LnBuZw==/32x32%23/wpQMLY.png"
+    },
+    {
+      "sitename": "/Video-Player-Grid",
+      "favicon": "https://DamianS-eng.github.io/docs/clip.ico"
+    },
+    {
+      "sitename": "/wiihacks-wiki",
+      "favicon": "https://DamianS-eng.github.io/wiihacks-wiki/favicon.ico"
+    },
+    {
+      "sitename": "/WiiMini-SDRST",
+      "favicon": "https://DamianS-eng.github.io/WiiMini-SDRST/favicon.ico"
+    },
+    {
+      "sitename": "/wordle",
+      "favicon": "https://damians-eng.github.io/wordle/images/wordle_logo_32x32.png"
+    },
+    {
+      "sitename": "/ws4kp",
+      "favicon": "https://DamianS-eng.github.io/images/logos/logo192.png"
+    }
+  ]
+}
