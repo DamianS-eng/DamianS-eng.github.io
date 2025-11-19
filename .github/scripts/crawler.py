@@ -1,5 +1,3 @@
-
-...
 import requests
 import json
 from bs4 import BeautifulSoup
@@ -12,11 +10,12 @@ def get_favicon(site_url):
         return found_favicon
     found_favicon = f"{site_url.rstrip('/')}/favicon.ico"
     soup = BeautifulSoup(response.text, "html.parser")
+    site_title = soup.title.string if soup.title else ""
     icon_link = soup.find("link", rel=lambda x: x and "icon" in x.lower())
     if icon_link and icon_link.get("href"):
-        print(icon_link["href"])
         found_favicon = requests.compat.urljoin(site_url, icon_link["href"])
-    return found_favicon
+        print(f"{site_title}, : {icon_link['href']} : {found_favicon}")
+    return (found_favicon, site_title)
 
 def get_github_pages_sites(base_url, username, token):
     visited = set()
@@ -38,10 +37,11 @@ def get_github_pages_sites(base_url, username, token):
             print(str(pages_response))
             if pages_response.status_code == 200:
                 site_url = f"{base_url}{repo["name"]}"
-                favicon = get_favicon(site_url)
+                favicon, title = get_favicon(site_url)
                 found_repo = {
                     "sitename" : f"/{repo['name']}",
-                    "favicon" : favicon
+                    "favicon" : favicon,
+                    "title" : title
                 }
                 #sites.append(site_url)
                 sites.append(found_repo)
