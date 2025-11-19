@@ -18,7 +18,7 @@ function addProjects(list) {
     favico.src = i.favicon;
     favplacehold.appendChild(favico);
     span.classList.add('site-name');
-    span.innerText = list.title;
+    span.innerText = i.title;
     a.appendChild(span);
     a.appendChild(favplacehold);
     li.appendChild(a);
