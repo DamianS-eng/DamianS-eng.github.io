@@ -2,7 +2,7 @@ const projectsEle = document.querySelector('#project-list');
 const guidesEle = document.querySelector('#guide-list');
 const funEle = document.querySelector('#fun-list');
 
-projectsFileName = './endpoints.json'
+projectsFileName = './docs/endpoints.json'
 
 function addProjects(list) {
   const docfrag = document.createDocumentFragment();
