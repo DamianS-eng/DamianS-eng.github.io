@@ -3,143 +3,178 @@
   "sites": [
     {
       "sitename": "/amazon-luna-clone",
-      "favicon": "https://DamianS-eng.github.io/amazon-luna-clone/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/amazon-luna-clone/favicon.ico",
+      "title": "Amazon Luna Clone"
     },
     {
       "sitename": "/Banjo-Kazooie-Unblocked",
-      "favicon": "https://DamianS-eng.github.io/logo.png"
+      "favicon": "https://DamianS-eng.github.io/logo.png",
+      "title": "Banjo-Kazooie"
     },
     {
       "sitename": "/Basic-HTML-roadmap",
-      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg",
+      "title": "Homepage"
     },
     {
       "sitename": "/boilerplate-npm",
-      "favicon": "https://DamianS-eng.github.io/boilerplate-npm/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/boilerplate-npm/favicon.ico",
+      "title": "Backend Challenges boilerplate - package.json | boilerplate-npm"
     },
     {
       "sitename": "/bongo.cat",
-      "favicon": "https://DamianS-eng.github.io/meta/apple-touch-icon.png"
+      "favicon": "https://DamianS-eng.github.io/meta/apple-touch-icon.png",
+      "title": "Bongo Cat"
     },
     {
       "sitename": "/Changelog-Test",
-      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg",
+      "title": "Changelog"
     },
     {
       "sitename": "/CityBuildingSkyline",
-      "favicon": "https://DamianS-eng.github.io/CityBuildingSkyline/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/CityBuildingSkyline/favicon.ico",
+      "title": "City Skyline"
     },
     {
       "sitename": "/clonezilla",
-      "favicon": "https://DamianS-eng.github.io/clonezilla_logo_transparent.gif"
+      "favicon": "https://DamianS-eng.github.io/clonezilla_logo_transparent.gif",
+      "title": "Clonezilla - About"
     },
     {
       "sitename": "/ControllerOverlay",
-      "favicon": "https://DamianS-eng.github.io/ControllerOverlay/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/ControllerOverlay/favicon.ico",
+      "title": ""
     },
     {
       "sitename": "/CSS-Tooltip",
-      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg",
+      "title": "Tooltip Example"
     },
     {
       "sitename": "/CSS_ferriswheel",
-      "favicon": "https://DamianS-eng.github.io/CSS_ferriswheel/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/CSS_ferriswheel/favicon.ico",
+      "title": "Ferris Wheel"
     },
     {
       "sitename": "/Custom-Cursor-Webpage",
-      "favicon": "https://DamianS-eng.github.io/Custom-Cursor-Webpage/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/Custom-Cursor-Webpage/favicon.ico",
+      "title": "Custom Cursor"
     },
     {
       "sitename": "/DamianS-eng.github.io",
-      "favicon": "https://DamianS-eng.github.io/docs/image.ico"
+      "favicon": "https://DamianS-eng.github.io/docs/image.ico",
+      "title": "DamianS Landing Page"
     },
     {
       "sitename": "/esp32-online-tool",
-      "favicon": "https://DamianS-eng.github.io/favicon.png"
+      "favicon": "https://DamianS-eng.github.io/favicon.png",
+      "title": "ESP32 ONLINE FLASH TOOL | Programa tu esp32 directo desde tu navegador chrome / edge"
     },
     {
       "sitename": "/GBA-Emulator-Unblocked",
-      "favicon": "https://DamianS-eng.github.io/Binaries/gb.ico"
+      "favicon": "https://DamianS-eng.github.io/Binaries/gb.ico",
+      "title": "Game Boy Advance"
     },
     {
       "sitename": "/handheldlegend.github.io",
-      "favicon": "https://DamianS-eng.github.io/handheldlegend.github.io/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/handheldlegend.github.io/favicon.ico",
+      "title": "handheldlegend.github.io"
     },
     {
       "sitename": "/HelloCodeSchoolProject",
-      "favicon": "https://DamianS-eng.github.io/HelloCodeSchoolProject/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/HelloCodeSchoolProject/favicon.ico",
+      "title": "DSuarez93"
     },
     {
       "sitename": "/hori-hpc-055-en",
-      "favicon": "https://hori.jp/wp-content/themes/hori/img/favicon.png"
+      "favicon": "https://hori.jp/wp-content/themes/hori/img/favicon.png",
+      "title": "HORI Co., Ltd. | Wireless Horipad for Steam"
     },
     {
       "sitename": "/landchad",
-      "favicon": "https://DamianS-eng.github.io/landchad/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/landchad/favicon.ico",
+      "title": "What is this | landchad"
     },
     {
       "sitename": "/Mario-Kart-64-HD",
-      "favicon": "https://DamianS-eng.github.io/Mario-Kart-64-HD/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/Mario-Kart-64-HD/favicon.ico",
+      "title": "Mario Kart 64 HD | Mario-Kart-64-HD"
     },
     {
       "sitename": "/mini-padder",
-      "favicon": "https://DamianS-eng.github.io/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/favicon.ico",
+      "title": "Mini Padder - Game Controller Input Overlay"
     },
     {
       "sitename": "/mobile-first-for-the-win",
-      "favicon": "https://DamianS-eng.github.io/mobile-first-for-the-win/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/mobile-first-for-the-win/favicon.ico",
+      "title": "CSS Zen Garden: The Beauty of CSS Design"
     },
     {
       "sitename": "/MyPkmnTeams",
-      "favicon": "https://DamianS-eng.github.io/image.ico"
+      "favicon": "https://DamianS-eng.github.io/image.ico",
+      "title": "DamianS Pkmn Teams"
     },
     {
       "sitename": "/neatnik-calendar",
-      "favicon": "https://DamianS-eng.github.io/neatnik-calendar/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/neatnik-calendar/favicon.ico",
+      "title": "Calendar | neatnik-calendar"
     },
     {
       "sitename": "/personal-portfolio-roadmapsh",
-      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg",
+      "title": "Personal Frontend Portfolio"
     },
     {
       "sitename": "/semantic-HTML-CV",
-      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg",
+      "title": "Single Page CV"
     },
     {
       "sitename": "/SolarWiki",
-      "favicon": "https://DamianS-eng.github.io/docs/image.ico"
+      "favicon": "https://DamianS-eng.github.io/docs/image.ico",
+      "title": "Solar Homeowner Guide"
     },
     {
       "sitename": "/Splatoon-Motion-Controls-Explained",
-      "favicon": "https://DamianS-eng.github.io/docs/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/docs/favicon.ico",
+      "title": "Explain Splatoon Motion Controls"
     },
     {
       "sitename": "/Testimonials",
-      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg"
+      "favicon": "https://DamianS-eng.github.io/favico/favicon.svg",
+      "title": "Testimonials"
     },
     {
       "sitename": "/tux-racer-js",
-      "favicon": "https://img.itch.zone/aW1nLzIwMTk4NDA0LnBuZw==/32x32%23/wpQMLY.png"
+      "favicon": "https://img.itch.zone/aW1nLzIwMTk4NDA0LnBuZw==/32x32%23/wpQMLY.png",
+      "title": "Tux Racer"
     },
     {
       "sitename": "/Video-Player-Grid",
-      "favicon": "https://DamianS-eng.github.io/docs/clip.ico"
+      "favicon": "https://DamianS-eng.github.io/docs/clip.ico",
+      "title": "This is DaMu's collection of Video clips! :)"
     },
     {
       "sitename": "/wiihacks-wiki",
-      "favicon": "https://DamianS-eng.github.io/wiihacks-wiki/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/wiihacks-wiki/favicon.ico",
+      "title": "NO LONGER MAINTAINED | Old WiiHacks Wiki"
     },
     {
       "sitename": "/WiiMini-SDRST",
-      "favicon": "https://DamianS-eng.github.io/WiiMini-SDRST/favicon.ico"
+      "favicon": "https://DamianS-eng.github.io/WiiMini-SDRST/favicon.ico",
+      "title": "WiiMini-SDRST | Modification for Wii Mini console adding microSD card slot and reset button"
     },
     {
       "sitename": "/wordle",
-      "favicon": "https://damians-eng.github.io/wordle/images/wordle_logo_32x32.png"
+      "favicon": "https://damians-eng.github.io/wordle/images/wordle_logo_32x32.png",
+      "title": "Wordle - A daily word game"
     },
     {
       "sitename": "/ws4kp",
-      "favicon": "https://DamianS-eng.github.io/images/logos/logo192.png"
+      "favicon": "https://DamianS-eng.github.io/images/logos/logo192.png",
+      "title": "WeatherStar 4000+"
     }
   ]
 }
