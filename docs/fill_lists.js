@@ -1,6 +1,6 @@
 const projectsEle = document.querySelector('#project-list');
 const guidesEle = document.querySelector('#guide-list');
-const projectsEle = document.querySelector('#fun-list');
+const funEle = document.querySelector('#fun-list');
 
 projectsFileName = './endpoints.json'
 
