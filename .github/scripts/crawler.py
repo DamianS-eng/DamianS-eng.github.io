@@ -10,7 +10,7 @@ def get_favicon(site_url):
         print(f"{site_url} has these icons:")
         for icon in icons:
             print(icon.url)
-        return icons[0]
+        return icons[0].url
     return ''    
 
 def get_favicon_and_title(site_url):
