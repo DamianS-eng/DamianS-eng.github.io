@@ -5,6 +5,7 @@ import favicon
 import os, sys
 
 def get_favicon(site_url):
+    default_icon_path = site_url.rstrip("/" + "/favicon.ico")
     try:
         icons = favicon.get(site_url)
         if icons:
@@ -13,25 +14,24 @@ def get_favicon(site_url):
                 print(icon.url)
             return icons[0].url
         else:
-            return site_url.rstrip("/" + "/favicon.ico")
+            return default_icon_path
     except Exception as e:
         print(f"Problem getting favicon for {site_url}: {e}")
-    return ''    
+    return default_icon_path
 
 def get_favicon_and_title(site_url):
-    found_favicon = ""
     site_title = ""
+    found_favicon = get_favicon(site_url)
     response = requests.get(site_url, timeout=3)
     if response.status_code != 200:
-        return found_favicon
-    found_favicon = f"{site_url.rstrip('/')}/favicon.ico"
+        return (found_favicon, site_title)
+    # found_favicon = f"{site_url.rstrip('/')}/favicon.ico"
     soup = BeautifulSoup(response.text, "html.parser")
     site_title = soup.title.string if soup.title else ""
-    icon_link = soup.find("link", rel=lambda x: x and "icon" in x.lower())
-    if icon_link and icon_link.get("href"):
-        found_favicon = requests.compat.urljoin(site_url, icon_link["href"])
-        print(f"Expected found icon: {site_title}, : {icon_link['href']} : {found_favicon}")
-    found_favicon = get_favicon(site_url)
+    # icon_link = soup.find("link", rel=lambda x: x and "icon" in x.lower())
+    # if icon_link and icon_link.get("href"):
+        # found_favicon = requests.compat.urljoin(site_url, icon_link["href"])
+        # print(f"Expected found icon: {site_title}, : {icon_link['href']} : {found_favicon}")
     return (found_favicon, site_title)
 
 def get_github_pages_sites(base_url, username, token):
@@ -60,7 +60,6 @@ def get_github_pages_sites(base_url, username, token):
                     "favicon" : favicon,
                     "title" : title
                 }
-                #sites.append(site_url)
                 sites.append(found_repo)
         page += 1
     return sites
