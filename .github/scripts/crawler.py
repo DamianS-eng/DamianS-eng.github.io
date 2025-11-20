@@ -5,12 +5,17 @@ import favicon
 import os, sys
 
 def get_favicon(site_url):
-    icons = favicon.get(site_url)
-    if icons:
-        print(f"{site_url} has these icons:")
-        for icon in icons:
-            print(icon.url)
-        return icons[0].url
+    try:
+        icons = favicon.get(site_url)
+        if icons:
+            print(f"{site_url} has these icons:")
+            for icon in icons:
+                print(icon.url)
+            return icons[0].url
+        else:
+            return site_url.rstrip("/" + "/favicon.ico")
+        except Exception as e:
+            print(f"Problem getting favicon for {site_url}: {e}")
     return ''    
 
 def get_favicon_and_title(site_url):
