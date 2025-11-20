@@ -103,7 +103,7 @@
     },
     {
       "sitename": "/mini-padder",
-      "favicon": "https://damians-eng.github.io/mini-padder/favicon.ico",
+      "favicon": "https://dinir.github.io/mini-padder/image/open-graph-image.png",
       "title": "Mini Padder - Game Controller Input Overlay"
     },
     {
@@ -138,7 +138,7 @@
     },
     {
       "sitename": "/Splatoon-Motion-Controls-Explained",
-      "favicon": "https://damians-eng.github.io/Splatoon-Motion-Controls-Explained/docs/favicon.ico",
+      "favicon": "https://damians-eng.github.io/Splatoon-Motion-Controls-Explained/docs/animated_favicon.ico",
       "title": "Explain Splatoon Motion Controls"
     },
     {
@@ -168,7 +168,7 @@
     },
     {
       "sitename": "/wordle",
-      "favicon": "",
+      "favicon": "https://DamianS-eng.github.io/wordle",
       "title": "Wordle - A daily word game"
     },
     {
