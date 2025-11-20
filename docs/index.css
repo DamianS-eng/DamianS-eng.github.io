@@ -161,20 +161,6 @@ a {
 ul {
   list-style: none;
 }
-ul .subsite {
-  margin-block: 2ex;
-}
-ul .subsite a {
-  padding: .5rem .2rem;
-  display: grid;
-  grid-template-columns: 1fr 8ex;
-  grid-gap: 2ch;
-  transition: box-shadow calc(var(--time) / 6) ease-in-out;
-}
-ul .subsite a:hover,
-ul .subsite a:focus-within {
-  box-shadow: 0 .1rem .5rem var(--clr-line);
-}
 .contact-row {
   display: flex;
   justify-content: center;
@@ -192,6 +178,22 @@ ul .subsite a:focus-within {
 footer {
   --clr-bg: transparent; 
   min-height: 5ch;
+}
+@media (orientation: portrait) {
+  ul .subsite {
+  margin-block: 2ex;
+  }
+  ul .subsite a {
+    padding: .5rem .2rem;
+    display: grid;
+    grid-template-columns: 1fr 8ex;
+    grid-gap: 2ch;
+    transition: box-shadow calc(var(--time) / 6) ease-in-out;
+  }
+  ul .subsite a:hover,
+  ul .subsite a:focus-within {
+    box-shadow: 0 .1rem .5rem var(--clr-line);
+  }
 }
 @media (orientation: landscape) {
   main {
