@@ -1,10 +1,21 @@
 import requests
 import json
 from bs4 import BeautifulSoup
+import favicon
 import os, sys
 
 def get_favicon(site_url):
+    icons = favicon.get(site_url)
+    if icons:
+        print(f"{site_url} has these icons:")
+        for icon in icons:
+            print(icon.url)
+        return icons[0]
+    return ''    
+
+def get_favicon_and_title(site_url):
     found_favicon = ""
+    site_title = ""
     response = requests.get(site_url, timeout=3)
     if response.status_code != 200:
         return found_favicon
@@ -14,7 +25,8 @@ def get_favicon(site_url):
     icon_link = soup.find("link", rel=lambda x: x and "icon" in x.lower())
     if icon_link and icon_link.get("href"):
         found_favicon = requests.compat.urljoin(site_url, icon_link["href"])
-        print(f"{site_title}, : {icon_link['href']} : {found_favicon}")
+        print(f"Expected found icon: {site_title}, : {icon_link['href']} : {found_favicon}")
+    found_favicon = get_favicon(site_url)
     return (found_favicon, site_title)
 
 def get_github_pages_sites(base_url, username, token):
@@ -37,7 +49,7 @@ def get_github_pages_sites(base_url, username, token):
             print(str(pages_response))
             if pages_response.status_code == 200:
                 site_url = f"{base_url}{repo["name"]}"
-                favicon, title = get_favicon(site_url)
+                favicon, title = get_favicon_and_title(site_url)
                 found_repo = {
                     "sitename" : f"/{repo['name']}",
                     "favicon" : favicon,
