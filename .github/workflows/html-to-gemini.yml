@@ -1,0 +1,37 @@
+name: Convert HTML to Gemini
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install converter
+        run: pip install html2gemini
+
+      - name: Convert HTML to Gemtext
+        run: |
+          mkdir -p gemini
+          for file in $(find . -name "*.html"); do
+            filename=$(basename "$file" .html)
+            html2gemini "$file" > "gemini/$filename.gmi"
+          done
+
+      - name: Commit Gemtext files
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add gemini/*.gmi
+          git commit -m "Convert HTML to Gemini"
+          git push
