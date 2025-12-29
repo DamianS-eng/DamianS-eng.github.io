@@ -7,11 +7,6 @@
       "title": "Amazon Luna Clone"
     },
     {
-      "sitename": "/Banjo-Kazooie-Unblocked",
-      "favicon": "https://damians-eng.github.io/Banjo-Kazooie-Unblocked/logo.png",
-      "title": "Banjo-Kazooie"
-    },
-    {
       "sitename": "/Basic-HTML-roadmap",
       "favicon": "https://damians-eng.github.io/Basic-HTML-roadmap/favico/apple-touch-icon.png",
       "title": "Homepage"
@@ -73,7 +68,7 @@
     },
     {
       "sitename": "/GBA-Emulator-Unblocked",
-      "favicon": "https://damians-eng.github.io/GBA-Emulator-Unblocked/hero.webp",
+      "favicon": "https://damians-eng.github.io/GBA-Emulator-Unblocked/Binaries/gb.ico",
       "title": "Game Boy Advance"
     },
     {
@@ -103,7 +98,7 @@
     },
     {
       "sitename": "/mini-padder",
-      "favicon": "https://damians-eng.github.io/mini-padder/favicon.ico",
+      "favicon": "https://dinir.github.io/mini-padder/image/open-graph-image.png",
       "title": "Mini Padder - Game Controller Input Overlay"
     },
     {
