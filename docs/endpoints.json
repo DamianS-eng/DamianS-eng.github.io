@@ -98,7 +98,7 @@
     },
     {
       "sitename": "/mini-padder",
-      "favicon": "https://dinir.github.io/mini-padder/image/open-graph-image.png",
+      "favicon": "https://damians-eng.github.io/mini-padder/favicon.ico",
       "title": "Mini Padder - Game Controller Input Overlay"
     },
     {
@@ -127,6 +127,11 @@
       "title": "Personal Frontend Portfolio"
     },
     {
+      "sitename": "/protondb-i18n",
+      "favicon": "https://DamianS-eng.github.io/protondb-i18",
+      "title": "protondb-i18n | My fork of the crowd-sourced ProtonDB translation project."
+    },
+    {
       "sitename": "/semantic-HTML-CV",
       "favicon": "https://damians-eng.github.io/semantic-HTML-CV/favico/apple-touch-icon.png",
       "title": "Single Page CV"
@@ -138,7 +143,7 @@
     },
     {
       "sitename": "/Splatoon-Motion-Controls-Explained",
-      "favicon": "https://damians-eng.github.io/Splatoon-Motion-Controls-Explained/docs/animated_favicon.ico",
+      "favicon": "https://damians-eng.github.io/Splatoon-Motion-Controls-Explained/docs/favicon.ico",
       "title": "Explain Splatoon Motion Controls"
     },
     {
