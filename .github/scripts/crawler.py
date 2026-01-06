@@ -70,6 +70,8 @@ def save_sites_to_json(base_url, username, token, filename="endpoints.json"):
     with open(filename, "w") as f:
         json.dump(data, f, indent=2)
     print(f"Saved {len(sites)} sites to {filename}.")
+    with open("temp_number_added_sites.txt", "w") as f:
+        f.write("{len(sites)}")
 
 if __name__ == "__main__":
     token = os.getenv("GITHUB_TOKEN")
