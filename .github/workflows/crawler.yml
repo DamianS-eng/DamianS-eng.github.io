@@ -40,9 +40,10 @@ jobs:
       - name: Commit and Push
         run: |
           USERNAME=$(echo $GITHUB_REPOSITORY | cut -d'/' -f1)
+          NUMBER_UPDATED=$(cat temp_number_added_sites.txt) && export NUMBER_UPDATED
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${USERNAME}/${USERNAME}.github.io.git
           mv ${{ env.OUTPUT }} ./docs/${{ env.OUTPUT }}
           git add ./docs/${{ env.OUTPUT }}
-          git diff --cached --quiet || (git commit -am "update page endpoints" && git push)
+          git diff --cached --quiet || (git commit -am "update $(NUMBER_UPDATED) page endpoints" && git push)
