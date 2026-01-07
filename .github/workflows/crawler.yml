@@ -46,4 +46,4 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${USERNAME}/${USERNAME}.github.io.git
           mv ${{ env.OUTPUT }} ./docs/${{ env.OUTPUT }}
           git add ./docs/${{ env.OUTPUT }}
-          git diff --cached --quiet || (git commit -am "update $(NUMBER_UPDATED) page endpoints" && git push)
+          git diff --cached --quiet || (git commit -am "update $NUMBER_UPDATED page endpoints" && git push)
