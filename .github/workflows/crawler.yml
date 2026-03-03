@@ -29,6 +29,7 @@ jobs:
         run: |
           USERNAME=$(echo $GITHUB_REPOSITORY | cut -d'/' -f1)
           python .github/scripts/crawler.py "https://${USERNAME}.github.io/" "${USERNAME}"
+          echo NUMBER_UPDATED=$(cat temp_number_added_sites.txt) >> $GITHUB_ENV
           pwd
           ls
       - name: Upload endpoints.json artifact
@@ -40,7 +41,6 @@ jobs:
       - name: Commit and Push
         run: |
           USERNAME=$(echo $GITHUB_REPOSITORY | cut -d'/' -f1)
-          NUMBER_UPDATED=$(cat temp_number_added_sites.txt) && export NUMBER_UPDATED
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${USERNAME}/${USERNAME}.github.io.git
