@@ -73,7 +73,7 @@
     },
     {
       "sitename": "/GBA-Emulator-Unblocked",
-      "favicon": "https://damians-eng.github.io/GBA-Emulator-Unblocked/Binaries/gb.ico",
+      "favicon": "https://damians-eng.github.io/GBA-Emulator-Unblocked/hero.webp",
       "title": "Game Boy Advance"
     },
     {
@@ -145,6 +145,11 @@
       "sitename": "/protondb-i18n",
       "favicon": "https://DamianS-eng.github.io/protondb-i18",
       "title": "protondb-i18n | My fork of the crowd-sourced ProtonDB translation project."
+    },
+    {
+      "sitename": "/Reflex-CTRL",
+      "favicon": "https://DamianS-eng.github.io/Reflex-CTRL",
+      "title": "General | Reflex-CTRL"
     },
     {
       "sitename": "/save-file-converter",
