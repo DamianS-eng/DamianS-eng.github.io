@@ -12,11 +12,6 @@
       "title": "Homepage"
     },
     {
-      "sitename": "/boilerplate-npm",
-      "favicon": "https://DamianS-eng.github.io/boilerplate-npm",
-      "title": "Managing Packages With npm | boilerplate-npm"
-    },
-    {
       "sitename": "/bongo.cat",
       "favicon": "https://damians-eng.github.io/bongo.cat/meta/apple-touch-icon.png",
       "title": "Bongo Cat"
@@ -103,7 +98,7 @@
     },
     {
       "sitename": "/mini-padder",
-      "favicon": "https://dinir.github.io/mini-padder/image/open-graph-image.png",
+      "favicon": "https://damians-eng.github.io/mini-padder/favicon.ico",
       "title": "Mini Padder - Game Controller Input Overlay"
     },
     {
@@ -115,11 +110,6 @@
       "sitename": "/MyPkmnTeams",
       "favicon": "https://damians-eng.github.io/MyPkmnTeams/image.ico",
       "title": "DamianS Pkmn Teams"
-    },
-    {
-      "sitename": "/neatnik-calendar",
-      "favicon": "https://DamianS-eng.github.io/neatnik-calendar",
-      "title": "Calendar | neatnik-calendar"
     },
     {
       "sitename": "/nitter",
@@ -155,11 +145,6 @@
       "sitename": "/save-file-converter",
       "favicon": "https://damians-eng.github.io/save-file-converter/apple-touch-icon.png",
       "title": "Save File Converter"
-    },
-    {
-      "sitename": "/semantic-HTML-CV",
-      "favicon": "https://damians-eng.github.io/semantic-HTML-CV/favico/apple-touch-icon.png",
-      "title": "Single Page CV"
     },
     {
       "sitename": "/SolarWiki",
