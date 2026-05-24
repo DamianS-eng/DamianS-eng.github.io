@@ -12,6 +12,11 @@
       "title": "Homepage"
     },
     {
+      "sitename": "/boilerplate-npm",
+      "favicon": "https://DamianS-eng.github.io/boilerplate-npm",
+      "title": "Managing Packages With npm | boilerplate-npm"
+    },
+    {
       "sitename": "/bongo.cat",
       "favicon": "https://damians-eng.github.io/bongo.cat/meta/apple-touch-icon.png",
       "title": "Bongo Cat"
@@ -112,6 +117,11 @@
       "title": "DamianS Pkmn Teams"
     },
     {
+      "sitename": "/neatnik-calendar",
+      "favicon": "https://DamianS-eng.github.io/neatnik-calendar",
+      "title": "Calendar | neatnik-calendar"
+    },
+    {
       "sitename": "/nitter",
       "favicon": "https://DamianS-eng.github.io/nitter",
       "title": "Nitter | nitter"
@@ -147,13 +157,18 @@
       "title": "Save File Converter"
     },
     {
+      "sitename": "/semantic-HTML-CV",
+      "favicon": "https://damians-eng.github.io/semantic-HTML-CV/favico/apple-touch-icon.png",
+      "title": "Single Page CV"
+    },
+    {
       "sitename": "/SolarWiki",
       "favicon": "https://damians-eng.github.io/SolarWiki/docs/image.ico",
       "title": "Solar Homeowner Guide"
     },
     {
       "sitename": "/Splatoon-Motion-Controls-Explained",
-      "favicon": "https://damians-eng.github.io/Splatoon-Motion-Controls-Explained/docs/animated_favicon.ico",
+      "favicon": "https://damians-eng.github.io/Splatoon-Motion-Controls-Explained/docs/favicon.ico",
       "title": "Explain Splatoon Motion Controls"
     },
     {
